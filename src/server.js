@@ -8,12 +8,6 @@ bot.start(async (ctx) => {
   ctx.reply(`Olá ${ctx.update.message.chat.first_name}, eu sou o Artificial Artistry!\nMe manda qualquer frase que em alguns minutos vou enviar 4 imagens pra você.\n
   Exemplo: "Um robô pintando um quadro muito bonito, arte digital"'
   `)
-
-  ctx.reply("aguarde alguns minutos, enviando...")
-
-  const { imgGenerate } = await apiChartGpt("Um robô pintando um quadro muito bonito, arte digital")
-
-  imgGenerate.forEach(image => ctx.replyWithPhoto({ url: image.url }))
 })
 
 bot.on('message', async (msg) => {
@@ -23,7 +17,7 @@ bot.on('message', async (msg) => {
   
     imgGenerate.forEach(image => msg.replyWithPhoto({ url: image.url }))
   } catch(err) {
-    msg.reply(`❌ Imagem não gerada, tente novamente.`)
+    msg.reply(`❌ Imagem não gerada, tente novamente em alguns minutos...`)
   }
 });
 
