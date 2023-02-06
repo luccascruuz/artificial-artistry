@@ -23,7 +23,7 @@ bot.on('message', async (msg) => {
   
     imgGenerate.forEach(image => msg.replyWithPhoto({ url: image.url }))
   } catch(err) {
-    msg.reply(`❌ Você não poder pedir imagens desse tipo.`)
+    msg.reply(`❌ Imagem não gerada, tente novamente.`)
   }
 });
 
