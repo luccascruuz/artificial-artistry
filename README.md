@@ -2,7 +2,7 @@
 
 
 <h1 align="center">
-    <img alt="telegram bot image 1" src=".github/Imagem1.jpeg" />
+<img alt="telegrambotimage1" src="github/image1.png" />
 </h1>
 
 <br>
