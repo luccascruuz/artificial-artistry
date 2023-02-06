@@ -1,5 +1,10 @@
 ## 🤖 Artificial Artistry
 
+
+<h1 align="center">
+    <img alt="telegram bot image 1" src=".github/Imagem1.jpeg" />
+</h1>
+
 <br>
 
 ## 🧪 Tecnologias
@@ -28,15 +33,11 @@ Lembre de preencher seus TOKENS de acesso no arquivo .env
 O Artificial Artistry é um bot no telegram que gera imagens usando a API do openai, basta escrever algo e ele retornorá imagens baseado no texto.
 
 <h1 align="center">
-    <img alt="telegram bot image 1" src=".github/Imagem1.png" />
+    <img alt="telegram bot image 2" src=".github/Imagem2.jpeg" />
 </h1>
 
 <h1 align="center">
-    <img alt="telegram bot image 2" src=".github/Imagem2.png" />
-</h1>
-
-<h1 align="center">
-    <img alt="telegram bot image 3" src=".github/Imagem3.png" />
+    <img alt="telegram bot image 3" src=".github/Imagem3.jpeg" />
 </h1>
 
 ## 🔖 Deploy
