@@ -1,18 +1,20 @@
 {
-  "name": "bot-telegram-generation-img",
+  "name": "artificial-artistry",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/server.js",
-    "start": "node src/server.js"
+    "dev": "node --watch --env-file-if-exists=.env src/server.js",
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "check": "for f in $(find src -name \"*.js\"); do node --check $f || exit 1; done"
   },
   "dependencies": {
-    "openai": "^3.1.0",
-    "telegraf": "^4.11.2"
+    "openai": "^7.51.0",
+    "telegraf": "^4.16.3"
   },
-  "devDependencies": {
-    "dotenv": "^16.0.3"
+  "description": "Bot do Telegram que gera imagens com IA a partir de texto",
+  "private": true,
+  "engines": {
+    "node": ">=22.9"
   }
 }
